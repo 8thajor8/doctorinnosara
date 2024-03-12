@@ -135,6 +135,9 @@ body {
   position: fixed;
   min-width: 100%;
   min-height: 100%;
+  /*width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);*/
 }
 .banner .banner__container {
   display: flex;
@@ -194,6 +197,14 @@ body {
   background-color: rgb(147, 212, 218);
 }
 
+.mobile {
+  display: block;
+}
+
+.desktop {
+  display: none;
+}
+
 @media (min-width: 992px) {
   .banner {
     justify-content: start;
@@ -231,6 +242,29 @@ body {
     justify-content: left;
   }
 }
+@media (min-width: 720px) {
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}
+/*
+@media (min-aspect-ratio: 16/9) {
+    .parallax__container__video .parallax__video {
+
+      height: 56.25vw;
+    }
+  }
+
+  @media (max-aspect-ratio: 16/9) {
+    .parallax__container__video .parallax__video {
+
+      width: 177.78vh;
+    }
+  }
+*/
 .contact__container {
   background-color: rgb(232, 232, 236);
   justify-content: center;
