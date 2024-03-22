@@ -760,9 +760,110 @@ body{
 }
 
 
+.xray__section {
+    position: relative;
+    padding: 50px 0px;
+    overflow-x: hidden;
+    z-index: 1;
+    .overlay{
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .xray__parallax{
+        height: 100%; /* Adjusted height */
+        position: absolute;
+        z-index: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+        background-image: url('../assets/xraydoctor.jpg');
+        
+        background-color: transparent;
+        background-size: cover;
+        background-attachment: fixed; 
+        background-repeat: no-repeat;
+        transition: transform 0.01s ease;
+        
+    }
+    .xray__content {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        z-index: 1;
+        .xray__content__left {
+            flex: 1;
+            margin-right: 50px; /* Adjust spacing */
+            img {
+            max-width: 100%;
+            height: auto;
+            transform: translateX(-15%);
+            border-radius: 25px;
+            border: solid white 4px;
+            }
+        }
+        .xray__content__right {
+            flex: 1;
+            text-align: center;
+            justify-content: center;
+            padding: 0px 100px;
+            h2 {
+                font-family: $head-text;
+                text-shadow: 2px 2px 2px rgba(51, 51, 51, 0.484);
+                font-size: 2.8rem;
+                color: white;
+                margin-bottom: 30px;
+            }
+            p {
+                font-size:1.1rem;
+                color: white;
+                position: relative;
+                z-index: 2;
+                font-weight: 700;
+                
+                margin-bottom: 30px;
+                
+            }
+            button {
+            padding: 10px 20px;
+            background-color: #007bff; /* Adjust button color */
+            color: #fff; /* Adjust button text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            &:hover {
+                background-color: #0056b3; /* Adjust hover color */
+                }
+            }
+        }
+    }
+}
 
-
-
+@media (max-width: 992px) {
+    .xray__section{
+        .xray__content{
+            flex-direction: column ;
+            .xray__content__left {
+                flex: 1;
+                margin-right: 0px; /* Adjust spacing */
+                padding: 0px 20px;
+                img {
+                transform: translateX(0%);
+                border-radius: 25px;
+                border: solid white 4px;
+                
+                }
+            }
+            .xray__content__right {
+                flex: 1;
+                text-align: center;
+                justify-content: center;
+                padding: 0px 20px;
+            }
+        }
+    }   
+}
 
 
 .whatsapp__round {
