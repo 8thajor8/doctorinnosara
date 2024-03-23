@@ -824,18 +824,6 @@ body{
                 margin-bottom: 30px;
                 
             }
-            button {
-            padding: 10px 20px;
-            background-color: #007bff; /* Adjust button color */
-            color: #fff; /* Adjust button text color */
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            &:hover {
-                background-color: #0056b3; /* Adjust hover color */
-                }
-            }
         }
     }
 }

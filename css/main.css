@@ -697,18 +697,6 @@ body {
   font-weight: 700;
   margin-bottom: 30px;
 }
-.xray__section .xray__content .xray__content__right button {
-  padding: 10px 20px;
-  background-color: #007bff; /* Adjust button color */
-  color: #fff; /* Adjust button text color */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.xray__section .xray__content .xray__content__right button:hover {
-  background-color: #0056b3; /* Adjust hover color */
-}
 
 @media (max-width: 992px) {
   .xray__section .xray__content {
